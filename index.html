@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
-  </head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
-    <h1>Hello World</h1>
-    <script src="script.js"></script>
+    <h1 id="title">Cory's Boyfriend Application</h1>
+    <p id="description">Cory is looking for a <b>"New Boo"</b> and if you think that's you, apply below! ♥</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">What should Cory call you:
+                <input placeholder="Bilbo Baggins" type="text" id="name" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="email-label">Leave your email for Cory:
+                <input placeholder="call4goodtime@daddy.com" type="email" id="email" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="number-label">How old are you:
+                <input placeholder="70" id="number" type="number" min="18" max="70">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dick-size">How endowed would you say you are:
+                <select id="dropdown">
+                    <option value="5">(Be Honest)</option>
+                    <option value="1">Below Average</option>
+                    <option value="2">Average</option>
+                    <option value="3">Above Average</option>
+                    <option value="4">You're gonna need a wheelchair</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Height matters! What's yours:</label>
+            <label for="short">
+                <input class="inline" value="2" id="short" type="radio" name="height"> Really?
+            </label>
+            <label for="average">
+                <input class="inline" id="average" value="1" type="radio" name="height"> 5'8"-5'10"
+            </label>
+            <label for="tall">
+                <input class="inline" id="tall" value="3" type="radio" name="height"> 5'11" and up
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="favorite">What are the things you like about Cory? <em>check all that apply</em></label>
+            <label>
+                <input value="2" class="inline" id="favorite" type="checkbox">His eyes
+            </label>
+            <label>
+                <input value="4" class="inline" id="favorite" type="checkbox">His beautiful skin
+            </label>
+            <label>
+                <input value="10" class="inline" id="favorite" type="checkbox">His juicy butt
+            </label>
+            <label>
+                <input value="2" class="inline" id="favorite" type="checkbox">The fact that he always smells good
+            </label>
+            <label>
+                <input value="1" class="inline" id="favorite" type="checkbox">His smile</label>
+            <label for="bio">If you had one night with Cory, how would you please him:
+                <textarea id="bio" name="bio" rows="5" cols="30" placeholder="I like slobbing knobs so..."></textarea>
+            </label>
+        </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+  </form>
+  <script src="script.js"></script>
   </body>
-</html>
+  </html>
